@@ -11,12 +11,11 @@ import javax.swing.JPanel;
 class Options extends JPanel implements ItemListener {
     private boolean enabled = true;
     private JCheckBox checkbox;
-    private static final ResourceBundle labels = ResourceBundle.getBundle("messages");
+    private static final ResourceBundle labels = ResourceBundle.getBundle("com.chocolatey.pmsedl.lang.messages");
     private static final String ENABLE = labels.getString("Options.Enable");
 
     protected Options() {
         checkbox = new JCheckBox(ENABLE, true);
-        checkbox.setMnemonic(KeyEvent.VK_E);
         checkbox.addItemListener(this);
         add(checkbox);
         setVisible(true);

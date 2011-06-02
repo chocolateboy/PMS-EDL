@@ -5,7 +5,6 @@ import net.pms.dlna.DLNAResource;
 import net.pms.external.FinalizeTranscoderArgsListener;
 import net.pms.io.OutputParams;
 import net.pms.PMS;
-import net.pms.util.FileUtil;
 
 import java.io.File;
 import java.util.List;
@@ -36,15 +35,15 @@ public class Plugin implements FinalizeTranscoderArgsListener {
 
     @Override
     public List<String> finalizeTranscoderArgs(
-        String id,
+        String engine,
         String filename,
         DLNAResource dlna,
         DLNAMediaInfo media,
         OutputParams params,
         List<String> cmdList)
     {
-        if (options.isEnabled() && id.equals("mencoder")) {
-            File file = new File(FileUtil.getFileNameWithoutExtension(filename) + ".edl");
+        if (options.isEnabled() && engine.equals("mencoder")) {
+            File file = new File(filename + ".edl");
 
             if (!fileExists(file)) {
                 file = new File(file.getParentFile(), "folder.edl");

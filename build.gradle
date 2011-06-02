@@ -1,6 +1,7 @@
 apply plugin: 'java'
-
 defaultTasks 'clean', 'jar'
+version = '1.0.0'
+jar.baseName = 'pms-edl' // otherwise it defaults to the directory name
 
 dependencies {
     compile fileTree(dir: 'lib', include: '*.jar')
