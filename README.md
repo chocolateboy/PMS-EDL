@@ -63,7 +63,6 @@ The generated jar file can be found in `build/libs`.
 
 # Troubleshooting and Support <a name="Help"></a>
 * Check the PMS `debug.log`
-<!-- * For more details, discussion and troubleshooting tips, see [this thread](http://ps3mediaserver.org/forum/viewtopic.php?f=x&t=y) -->
 
 # Version <a name="Version"></a>
 
