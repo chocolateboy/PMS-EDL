@@ -6,13 +6,13 @@ This is a plugin for [PS3 Media Server](http://code.google.com/p/ps3mediaserver/
 
 This plugin should work on all platforms supported by PS3 Media Server.
 
-These instructions assume you have the [latest version of PS3 Media Server](http://www.ps3mediaserver.org/forum/viewtopic.php?f=6&t=3507&p=36904#p36904) (PMS) and the [latest version of Java](http://www.java.com/en/download/index.jsp).
+These instructions assume you have the [latest version](http://www.ps3mediaserver.org/forum/viewtopic.php?f=6&t=3507&p=36904#p36904) of PS3 Media Server (PMS) and the [latest version](http://www.java.com/en/download/index.jsp) of Java.
 
 # Installation <a href="Install"></a>
 
 * stop PMS
-* Download and save the [plugin](https://github.com/downloads/chocolateboy/PMS-EDL/pms-edl-1.0.0.jar) to the PMS `plugins` directory
-* Restart PMS
+* download and save the [plugin](https://github.com/downloads/chocolateboy/PMS-EDL/pms-edl-1.0.0.jar) to the PMS `plugins` directory
+* restart PMS
 
 # Uninstalling <a href="Uninstall"></a>
 
