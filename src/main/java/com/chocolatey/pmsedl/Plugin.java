@@ -2,6 +2,7 @@ package com.chocolatey.pmsedl;
 
 import net.pms.dlna.DLNAMediaInfo;
 import net.pms.dlna.DLNAResource;
+import net.pms.encoders.Player;
 import net.pms.external.FinalizeTranscoderArgsListener;
 import net.pms.io.OutputParams;
 import net.pms.PMS;
@@ -12,7 +13,7 @@ import java.util.List;
 import javax.swing.JComponent;
 
 public class Plugin implements FinalizeTranscoderArgsListener {
-    private static final String VERSION = "1.0.0";
+    private static final String VERSION = "1.1.0";
     private static final String NAME = "PMS-EDL";
     private Options options;
 
@@ -35,14 +36,14 @@ public class Plugin implements FinalizeTranscoderArgsListener {
 
     @Override
     public List<String> finalizeTranscoderArgs(
-        String engine,
+        Player player,
         String filename,
         DLNAResource dlna,
         DLNAMediaInfo media,
         OutputParams params,
         List<String> cmdList)
     {
-        if (options.isEnabled() && engine.equals("mencoder")) {
+        if (options.isEnabled() && player.id().equals("mencoder")) {
             File file = new File(filename + ".edl");
 
             if (!fileExists(file)) {
