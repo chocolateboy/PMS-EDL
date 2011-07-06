@@ -11,7 +11,7 @@ These instructions assume you have the [latest version](http://www.ps3mediaserve
 # Installation <a href="Install"></a>
 
 * stop PMS
-* download and save the [plugin](https://github.com/downloads/chocolateboy/PMS-EDL/pms-edl-1.0.0.jar) to the PMS `plugins` directory
+* download and save the [plugin](https://github.com/downloads/chocolateboy/PMS-EDL/pms-edl-1.1.0.jar) to the PMS `plugins` directory
 * restart PMS
 
 # Uninstalling <a href="Uninstall"></a>
@@ -54,7 +54,7 @@ For information on creating EDL files, see [here](http://www.mplayerhq.hu/DOCS/H
 To build the plugin from source:
 
 * install the latest version of [gradle](http://www.gradle.org/downloads.html)
-* create a subdirectory called `lib/` and add/symlink a recent (>= r604) `pms.jar` there
+* create a subdirectory called `lib/` and add/symlink a recent (>= 1.30.1) `pms.jar` there
 * run the default `jar` task by entering the command: `gradle`
 
 The generated jar file can be found in `build/libs`.
@@ -64,7 +64,7 @@ The generated jar file can be found in `build/libs`.
 
 # Version <a name="Version"></a>
 
-1.0.0
+1.1.0
 
 # License <a name="License"></a>
 
