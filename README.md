@@ -12,36 +12,36 @@ EDLs require MEncoder, so if it is not being used automatically, it will need to
 
 For information on creating EDL files, see [here](http://www.mplayerhq.hu/DOCS/HTML/en/edl.html).
 
-# Installation <a href="Install"></a>
+# Installation <a name="Install"></a>
 
 * stop PMS
 * download and save the [plugin](https://github.com/downloads/chocolateboy/PMS-EDL/pms-edl-1.1.0.jar) to the PMS `plugins` directory
 * restart PMS
 
-# Uninstalling <a href="Uninstall"></a>
+# Uninstalling <a name="Uninstall"></a>
 
 * stop PMS
 * remove the jar file from the `plugins` directory
 * restart PMS
 
-# Upgrading <a href="Upgrade"></a>
+# Upgrading <a name="Upgrade"></a>
 
 * stop PMS
 * replace the old jar file with the new version
 * restart PMS
 
-# Usage <a href="Usage"></a>
+# Usage <a name="Usage"></a>
 
 There are two ways to name an EDL: per-file and per-folder. Per-file EDLs take precedence over per-folder EDLs.
 
-## Per-file
+## Per-file <a name="per-file"></a>
 
 To create file-specific EDLs, place each `.edl` file in the same folder as the video it applies to. The .edl file must have the same filename as the video with an `.edl` extension appended e.g.
 
 * Big Buck Bunny.mp4
 * Big Buck Bunny.mp4.edl
 
-## Per-folder
+## Per-folder <a name="per-folder"></a>
 
 To create an EDL that applies to all videos in a folder, create a file called `folder.edl`.
 
