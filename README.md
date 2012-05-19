@@ -1,6 +1,6 @@
 # Synopsis <a name="Synopsis"></a>
 
-This is a plugin for [PS3 Media Server](http://code.google.com/p/ps3mediaserver/) that adds support for MEncoder edit decision lists (EDLs).
+This is a plugin for [PS3 Media Server](http://code.google.com/p/ps3mediaserver/) that adds support for MEncoder edit decision lists (EDLs). For information on creating EDL files, see [here](http://www.mplayerhq.hu/DOCS/HTML/en/edl.html).
 
 # Prerequisites <a name="Prerequisites"></a>
 
@@ -9,8 +9,6 @@ This plugin should work on all platforms supported by PS3 Media Server.
 These instructions assume you have the [latest version](http://www.ps3mediaserver.org/forum/viewtopic.php?f=6&t=3507&p=36904#p36904) of PS3 Media Server (PMS) and the [latest version](http://www.java.com/en/download/index.jsp) of Java.
 
 EDLs require MEncoder, so if it is not being used automatically, it will need to be invoked via the `#--TRANSCODE--#` folder.
-
-For information on creating EDL files, see [here](http://www.mplayerhq.hu/DOCS/HTML/en/edl.html).
 
 # Installation <a name="Install"></a>
 
